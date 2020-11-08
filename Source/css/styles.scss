@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700'); 
+ 
+$fontFamily: 'Montserrat', sans-serif, 'Montserrat', century gothic, sans-serif;
+$b-color: #038523;
+$h2: #41aea9;
+
+@mixin border( $color )
+{
+    border: solid thin $color;
+}
+@mixin bg( $color )
+{
+    background: $color;
+}
+@mixin bgImg( $img )
+{
+    background-image: url( $img );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body
+{
+	font-family: $fontFamily;
+    margin: 0; 
+    padding: 0;
+    background: #fff;
+}
+
+#article-div
+{
+    position: relative;
+    margin-top: -2em;
+    font-family: $fontFamily;
+    line-height: 2em;
+}
+
+a
+{
+    color: teal;
+    text-decoration: none;
+}
+
+section
+{
+    @include border( none );
+    width: 100%;
+
+}
+
+
+#hoch-1-a
+{
+    color: white;
+}
+
+#hoch-2-a:hover
+{
+    color: white;
+}
+#hoch-2-a
+{
+    color: crimson;
+}
+
+
+#secondParentLabelDiv
+{
+    display: none;
+}
+#secondGrandParent
+{
+    margin: auto;
+    width: 100%;
+    height: 30em;
+    @include bgImg("../Drawable/head3.jpg");
+  
+    z-index: 1;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    animation: bgMove 50s ease-in-out infinite;
+}
+
+@keyframes bgMove
+{
+    0%{
+        background-size: 2000px;
+        background-position-y: 0em;
+    }
+
+    50%{
+        background-position-y: -50em;
+    }
+    100%{
+        background-size: 3500px;
+        background-position-y: 0em;
+    }
+
+}
+
+#headDark
+{
+    width: 100%;
+    height: 100%;
+    @include bg( #000 );
+    opacity: .6;
+}
+
+#shapeDiv
+{
+    width: 40%;
+    height: 50em;
+    @include border( none );
+    position: absolute;
+    top: -10em;
+    left: -10em;
+    @include bg( $b-color );
+    opacity: .3;
+    transform: skew(-15deg, -15deg);
+    min-width: 40em;
+}
+
+#headContents
+{
+    position: absolute;
+    @include border( none );
+    top: 0;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+#head-content
+{
+    width: 90%;
+    margin: auto;
+}
+
+#head-two-content
+{
+    width: 50%;
+}
+
+#labelOneDiv
+{
+    height: 5em;
+    @include bg( #fff );
+    position: relative;
+    width: 90%;
+    min-width: 47em;
+}
+
+#labelImg
+{
+    width: 16em;
+    height: 100%;
+}
+
+#playSpan
+{
+    font-family: $fontFamily;
+    font-size: 2em;
+    letter-spacing: .3em;
+    @include border( #016119 );
+    position: relative;
+    top: -.8em;
+    left: 2em;
+    padding: .3em;
+}
+
+#parentLabelDiv
+{
+    top: 2em;
+    left: 0em;
+    position: relative;
+    @include border( crimson );
+    border-right: none;
+    border-bottom: none;
+    padding: 2em;
+    
+}
+
+#article-header-div
+{
+    font-family: $fontFamily;
+    border: none;
+    border-left: solid thin #fff;
+    padding-left: 1em;
+    width: 40%;
+    margin-top: 1em;
+    color: #fff;
+}
+
+#i-frame
+{
+    height: 100%;
+    width: 100%;
+}
+#parent-school-logo-img
+{
+    position: relative;
+    margin-top: 2em;
+    @include bg( black );
+
+    height: 16em;
+    overflow: hidden;
+}
+
+
+#first-section-div
+{
+    width: 100%;
+    @include border( #dcdcdc );
+    @include bg( #dcdcdc );
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+#uni-id
+{
+    color: crimson;
+    padding-bottom: 1em;
+}
+
+#university-title-div
+{
+    color: blue;
+    font-size: 1.5em;
+    color: #000;
+    letter-spacing: .3em;
+    padding: .5em;
+}
+
+#hochschule-two-div:hover
+{
+    background: crimson;
+    color: #fff;
+}
+#hochschule-two-div
+{
+    color: crimson;
+    width: 6em;
+    font-family: $fontFamily;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    border: solid thin crimson;
+    margin: 1em;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#hochschule-div
+{
+    background: crimson;
+    color: #fff;
+    width: 6em;
+    font-family: $fontFamily;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+
+    
+}
+
+#parent-section-div
+{
+    @include border( none );
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+
+    div
+    {
+        @include border( none );
+    }
+}
+
+#side-div
+{
+    width: 40%;
+}
+#content-div
+{
+    width:100%;
+    padding-left: 2em;
+}
+
+.side-img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+.flex-parent-div
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+
+    div
+    {
+        @include border( none );
+    }
+}
+
+.first-child-flex-div
+{
+    width: 40%;
+}
+
+.second-child-flex-div
+{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    height: 5em;
+    margin-left: .5em;
+}
+
+.li-span
+{
+    font-family: $fontFamily;
+    position: relative;
+    font-weight: 900;
+}
+
+
+#footer-parent
+{
+    width: 100%;
+    height: 35em;
+    margin-top: 4em;
+    @include bgImg("../Drawable/mid.jpg");
+    position: relative;
+}
+
+
+#resources
+{
+    @include bg( #dcdcdc );
+    color: $b-color;
+    font-family: $fontFamily;
+    padding: 1em;
+    margin-top: 1em;
+    font-weight: 900;
+}
+
+
+#mail-img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#dark-footer
+{
+    @include bg( $b-color );
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    position: relative;
+}
+
+#lower-child
+{
+   
+    @include bg( #dcdcdc );
+}
+
+#quote-footer-div
+{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#quote-child-div
+{
+    border-top: solid .2em #fff;
+   
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 2em;
+    font-family: $fontFamily;
+    color: #fff;
+    padding-top: 2em;
+}
+
+#flex-style-div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.6em;
+}
+
+#flex-1, #flex-3
+{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    @include border( none );
+
+}
+
+.horizontal-div div
+{
+    @include border( #fff );
+    height: 0em;
+    width: 100%;
+}
+
+#flex-2
+{
+    width:3.5%;
+    border: solid .1em #fff;
+    height: 1.8em;
+    border-radius: 50rem;
+    min-width: 1.7em;
+}
+
+.quote-img
+{
+    width: .5em;
+    height: .5em;
+    position: relative;
+    top: -.1em;
+}
+
+.q
+{
+    position: relative;
+    top: .3em;
+    color: crimson;
+}
+
+#inner-lower-child
+{
+    width: 90%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+#more-resources-div
+{
+    color: $b-color;
+    font-size: 2em;
+    font-family: $fontFamily;
+    margin-right: 1em;
+}
+
+.author-quote
+{
+    color: crimson;
+}
+
+#footer-flex-resource-parent-div
+{
+    border: solid thin crimson;
+    width: 110%;
+    margin-top: 1em;
+}
+
+#footer-flex-resource-parent-two-div
+{
+    display: flex;
+}
+
+#resourcse-child-inner-div
+{
+  
+    width: 50%;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+}
+#resourcse-child-div
+{
+  
+    width: 50%;
+    height: 20em;
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+    height: 42em;
+}
+
+.resource-child
+{
+    font-family: $fontFamily;
+    color: grey;
+    margin-right: 3em;
+}
+
+
+#resource-child-two-div
+{
+    
+    width: 70%;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4em;
+}
+
+#side-first-bg-img-div
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#side-bg-img-div
+{
+    width: 50%;
+    @include bgImg( "../Drawable/mid2.jpg" );
+}
+
+#foot-dark-side-div
+{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .6;
+}
+
+#quote-text-div
+{
+    font-family: $fontFamily;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-top: 2em;
+    color: grey;
+}
+
+.l
+{
+    font-size: 2.5em !important;
+    margin-right: .5em;
+}
+
+
+.below-resource-div
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+}
+
+.below-resource-div div:nth-child(2)
+{
+    display: flex;
+    align-items: center;
+}
+
+.below-img
+{
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+
+h1
+{
+    font-family: $fontFamily;
+    color: grey;
+    font-size: 3em;
+    letter-spacing: .3em;
+    line-height: 1.5em;
+}
+
+h2
+{
+    border-bottom: solid .1em $h2;
+    border-left: solid .1em $h2;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-top: .5em;
+    width: 50%;
+    color: $h2;
+    border-radius: 4em;
+}
+
+.tutorial-img
+{
+    width: 100%;
+    height: auto;
+}
+
+strong
+{
+    color: black;
+}
+
+b
+{
+    background: #dcdcdc;
+    color: #000;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .2em;
+    padding-top: .2em;
+    border-radius: .4em;
+}
+
+.note-p
+{
+    background: #fbf7f0;
+    padding: 2em;
+    border-radius: .5em;
+}
+
+#author-img
+{
+    width: 3em;
+    height: 3em;
+    border-radius: 10em;
+    align-items: center;
+    position: relative;
+  
+}
+
+#author-flex
+{
+    display: flex;
+    flex-direction: row;
+    border-left: solid .3em #dcdcdc;
+    padding: 1em;
+}
+
+#author-ul
+{
+    list-style: none;
+    margin: -.5em 1em;
+    padding: 0;
+}
+
+#author-ul li 
+{
+    font-size: .8em;
+    line-height: 1.8em;
+    color: grey;
+}
+
+#author-ul li span
+{
+    font-weight: 900;
+    color: #41aea9;
+}
+
+.output-flex-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    overflow: hidden;
+    height: 0em;
+    border-top: solid thin #dcdcdc;
+}
+
+#miroAnchor:hover
+{
+    color: teal;
+}
+#miroAnchor
+{
+    color: grey;
+    transition: all .3s ease;
+}
+
+.expand:hover
+{
+    background: $h2;
+    color: white;  
+    cursor: pointer;
+}
+
+.expand
+{
+    transition: all .3s ease-in;
+}
+
+.output-img
+{
+    width: 35em;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #secondGrandParent
+    {
+        height: 35em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #school-title
+    {
+        color: red;
+    }
+
+    
+#article-header-div
+{
+  
+    width: 70%;
+    
+}
+
+#footer-flex-resource-parent-two-div
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#resource-child-two-div
+{
+    
+    width: 100%;
+ 
+}
+#resourcse-child-div
+{
+  
+    width: 50%;
+    margin: auto;
+    height: 20em;
+   
+    
+}
+
+#labelImg
+{
+    width: 10em;
+    height: 100%;
+}
+
+#playSpan
+{
+    top: -1.3em;
+    left: 1em;
+    font-size: 1.5em;
+}
+
+#labelOneDiv
+{
+    
+    width: 90%;
+    min-width: 33em;
+}
+
+h1
+{
+    line-height: 1.2em;
+}
+
+#footer-parent
+{
+  
+    height: 45em;
+  
+}
+
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    #playSpan
+    {
+        color: red;
+    }
+
+    #article-header-div
+    {
+    
+        width: 100%;
+        
+    }
+
+    
+#shapeDiv
+{
+
+    min-width: 35em;
+}
+
+#labelOneDiv
+{
+    display: none;
+}
+
+#secondParentLabelDiv
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include bg( white );
+}
+
+#head-two-content
+{
+    width: 100%;
+}
+
+#labelImg2
+{
+    width: 100%;
+    height: 10em;
+}
+
+#innerSecondChildLabel
+{
+    background: $b-color;
+    padding: 1em;
+    color: white;
+    font-weight: 900;
+}
+
+#parentLabelDiv
+{
+    border: none;
+}
+
+
+#parent-section-div
+{
+    flex-direction: column-reverse;
+}
+
+#content-div
+{
+  
+    padding-left: 0em;
+}
+
+h1
+{
+    line-height: 1.2em;
+    
+}
+
+#side-div
+{
+    width: 100%;
+}
+
+#resourcse-child-div
+{
+    width: 100%;
+    margin: auto;
+    height: 20em;
+}
+
+}

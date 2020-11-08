@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--
+    Advanced Communication and Visualization - Summer 2020
+    Prof. Dr. rer. nat. Thorsten Leize.
+    Author: Victory Uzochukwu
+    Reg Num: 66116
+    School: Hochschule Karlsruhe Technik und Wirtschaft.
+    #######################
+    #######
+    # Please be informed: 
+    # This source is only for academic purposes made to help others
+    # who may find web development interesting. You may redistribute.
+    #########################
+    ###################################
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Play Framework</title>
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
+     rel="stylesheet" >
+    <!-- build:css css/main.css -->
+        <link href="css/styles.css" rel="stylesheet" >
+       
+    <!-- endbuild -->
+
+
+</head>
+<body>
+
+    <div id="myDiv" >
+
+            <header>
+                
+                    <div id="secondGrandParent" >
+                        <div id="headDark" ></div>
+                        <div id="shapeDiv" >
+                            
+                        </div>
+                        <div id="headContents" >
+                            <div id="head-content" >
+                                <div id="head-two-content" >
+                                    <div id="parentLabelDiv" >
+                                        <div id="labelOneDiv" >
+                                            <img src="Drawable/play2.jpg" alt="" id="labelImg" >
+                                            <span id="playSpan">  Play Framework</span>
+                                        </div>
+                                        <div id="secondParentLabelDiv" >
+                                            <div id="innerFirstChildLabel" >
+                                                <img src="Drawable/play2.jpg" alt="" id="labelImg2" >
+                                            </div>
+                                            <div id="innerSecondChildLabel" >
+                                                <span id="playSpan2">  Play Framework</span>
+                                            </div>
+                                        </div>
+                                        <div id="article-header-div">
+                                            This is a page which focuses  on 
+                                            Play Framework. The contents are derived from the 
+                                            knowledge of Play, from our 
+                                            <a href="https://www.hs-karlsruhe.de/hochschule/personen-a-z/details/user/thorsten-leize/">professor</a> , 
+                                            and other important resources from the internet that 
+                                            helped accomplish the whole project.
+                
+                                        </div>
+                
+                                        <div id="hochschule-div" >
+                                          
+                                            <a :href="links('https://www.hs-karlsruhe.de/')" target="_blank" id="hoch-1-a" >
+                                                Hochschule
+                                            </a>
+
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+            </header>
+            <section>
+                <div id="parent-section-div" >
+                
+                    <div id="side-div" >
+                        
+                        <div id="first-section-div" >
+                            <a href="https://www.hs-karlsruhe.de/" target="__blank">
+                                <div id="parent-school-logo-img">
+                                    <iframe id="i-frame"
+                                    src="https://www.youtube.com/embed/zMyIykekPh4">
+                                    </iframe>
+                                </div>
+                            </a>
+                            <div id="university-title-div" >
+                            <div id="uni-id" >
+                                University -
+                            </div>
+                            <div id="school-title" >
+                                    Hochschule Karlsruhe Technik und Wirtschaft
+                            </div>
+                            
+                            </div>
+                            <div id="hochschule-two-div" >
+                                <a :href="links('https://www.hs-karlsruhe.de/')" target="_blank" id="hoch-2-a" >
+                                    Hochschule
+                                </a>
+                            </div>
+                        </div>
+                        <div id="resources" >
+                            Resources
+                        </div>
+                        <div class="flex-parent-div" >
+                            <div class="first-child-flex-div" >
+                                <img src="Drawable/w33.png" alt="" class="side-img" >
+                                
+                            </div>
+                            <div class="second-child-flex-div" >
+                                <div class="li-span" >
+                                    <a :href="links('https://www.w3schools.com/')" target="_blank">
+                                        W3 School
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-parent-div" >
+                            <div class="first-child-flex-div" >
+                                <img src="Drawable/moz.jpg" alt="" class="side-img" >
+                                
+                            </div>
+                            <div class="second-child-flex-div" >
+                                <div class="li-span" >
+                                    <a :href="links('https://developer.mozilla.org/en-US/docs/Web/JavaScript')" target="_blank">
+                                        Mozilla JS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-parent-div" >
+                            <div class="first-child-flex-div" >
+                                <img src="Drawable/stk.png" alt="" class="side-img" >
+                                
+                            </div>
+                            <div class="second-child-flex-div" >
+                                <div class="li-span" >
+                                    <a :href="links('https://stackoverflow.com/questions/tagged/javascript')" target="_blank">
+                                        Stack Overflow
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div id="content-div" >
+
+                        
+                        <div id = "article-div">
+                            <h1>Quick Start - Play Framework</h1>
+
+                            <div id="author-flex" >
+                                <div>
+                                    <img src="Drawable/b10.jpeg" alt="" id="author-img" >
+                                </div>
+                                <div>
+                                    <ul id="author-ul" >
+                                        <li> <span>Author:</span> Victory Uzochukwu</li>
+                                        <li> <span>E-mail:</span> codingdrips@yahoo.com</li>
+                                        <li> <span>Last seen:</span> A few days ago</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 id="prototypeH2" class="expand" >Project prototype</h2>
+                                <div>
+                                    <a :href="links('https://miro.com/app/board/o9J_kgwJVH0=/')"
+                                    target="_blank" id="miroAnchor" >
+                                        <i class="fa fa-link"></i> Please go to prototype - <big>Miro</big> 
+                                    </a>
+                                </div>
+                            <div class="output-flex-div" >
+                                <div>
+                                    <img src="Drawable/b16.jpg" alt="" class="output-img" >
+                                </div>
+                                <div>
+                                    <img src="Drawable/b17.jpg" alt="" class="output-img" >
+                                </div>
+                                <div>
+                                    <img src="Drawable/b18.jpg" alt="" class="output-img" >
+                                </div>
+                              
+                                <div>
+                                    <img src="Drawable/b19.jpg" alt="" class="output-img" >
+                                </div>
+                            </div>
+                            <h2 id="outputH2" class="expand" >Project output</h2>
+                            <div class="output-flex-div" >
+                                <div>
+                                    <img src="Drawable/b11.jpg" alt="" class="output-img" >
+                                </div>
+                                <div>
+                                    <img src="Drawable/b12.jpg" alt="" class="output-img" >
+                                </div>
+                                <div>
+                                    <img src="Drawable/b13.jpg" alt="" class="output-img" >
+                                </div>
+                              
+                                <div>
+                                    <img src="Drawable/b15.jpg" alt="" class="output-img" >
+                                </div>
+                            </div>
+                            <p class = "first-p" >
+                               
+                                Play is quite a powerful concept to add to one's potfolio. If you are familiar with Java, you will love Play Framework.
+                                The documentation is easy to approach and understand. With already-done projects provided
+                                to guide users through the different stages. One can hardly get tired with the ideas therein.
+                                
+                            </p>
+                            <div>
+                            Play Framework is an open-source web application framework which follows 
+                            the model–view–controller (MVC) architectural pattern. It is written in Scala
+                            and usable from other programming languages that are compiled to JVM Bytecode,
+                            e.g. Java. It aims to optimize developer productivity by using convention over
+                            configuration, hot code reloading and display of errors in the browser.
+                                Play was created by software developer Guillaume Bort -
+                                <a href="https://en.wikipedia.org/wiki/Play_Framework" target="_blank">Wikipedia</a>
+                                </div>
+                                <p>
+                                The goal of this page is to demonstrate Play Framework using Scala and ScalaJS.
+                                There are other pages out there, by other authors, that are also 
+                                sufficient to do more. They are recommended. 	
+                                    To start, go 
+                                    <a target="_blank" :href = "links('https://developer.lightbend.com/start/?group=play&project=play-samples-play-java-forms-example')" >there</a>
+                                    to downlaod a starter project;
+                                    or you may go to their Github 
+                                    <a :href="links('https://github.com/playframework/playframework')" target="_blank">
+                                        page
+                                    </a>; or you may proceed to clone directly the whole package from my
+                                    <a :href="links('https://github.com/playframework/playframework')" target="_blank">
+                                    repository
+                                    </a>
+                                    . This page  started
+                                    with the Play Framework package with ScalaJS already installed.
+                                    	Below is what the structure looks like after a successful cloning: 
+                                </p>
+                                
+                                <h2>Project Structure</h2>
+                                <p v-html ='display( "Drawable/b1.jpg" )' ></p>
+
+            <p>
+                One can easily notice three most important folders in the project structure above. The 
+                first is <b>client</b> folder, which holds the ScalaJS files. The second folder, which is 
+                <b>server</b> is the folder which holds the actual Play Framework application. Note that if you plan to 
+                use ordinary Javascript with Play Framework, this structure may not be necessary. You, may then continue 
+                with <b>Model (M) View (V) Controller (C)</b> structure; and Play application doesn't have to stay 
+                within the <b>server</b> folder. Once you clone from my repo, you will have all these files available to you 
+                immediately. 
+            </p>
+            <h2>Exploring each folder.</h2>
+
+            <p>
+                Now the relevant folders will be expanded and explained gradually. The below folder is the folder
+                housing our JavaScript written in Scala.
+            </p>
+
+                        
+                                <p v-html ='display( "Drawable/b2.jpg" )' ></p>
+                                <p>
+                                    If one who has written Javascript before takes a closer look at this 
+                                    <b>javascript.scala</b> page, they can easily notice that it is still
+                                    the same as in ordinary Javascript. The  difference lies only in the syntax. The <b>main</b> gets called each time 
+                                    the application is compiled. The method <b>getElementsBySelector</b> is then called
+                                    to fetch elements by their respective ids. Notice that the first three lines within 
+                                    the method are similar to the way it is called in ordinary Javascript. Same way, same idea, one 
+                                    continues writing thier ScalaJS. Please 
+                                    <a :href="links('https://github.com/playframework/playframework')" target="_blank">
+                                        clone
+                                    </a>
+                                    my package for a full view of this page. 
+                                </p>
+                                <h2>Exploring server folder</h2>
+                                <p v-html ='display( "Drawable/b3.jpg" )' ></p>
+                                <p>
+                                    This folder holds our Play application just like mentioned above. Notice that within 
+                                    this folder, there is controller, model, and view folders; the standard Play structure.
+                                    It is within this controller class that you decide what the user should and should 
+                                    not see. For instance, you may decide the template to serve the user from this 
+                                    controller page. You can still write as many Scala codes and methods as you desire 
+                                    to meet your demand or the demand of your application within this controller class.
+                                     You can also pass values from the controller class to your individual templates 
+                                     and use them within the template.
+                                </p>
+                           
+                                <p class="note-p" >
+                                    <strong>Note: </strong> the template engine used in Play is
+                                    <a :href="links('https://github.com/playframework/twirl')" target="_blank">Twirl</a>. 
+                                   It's okay to have a little understanding of Twirl to be able to navigate 
+                                   your way across your template files just fine.
+                                </p>
+                                <p>
+                                    Twirl is quite easy to use and understand. Template engines 
+                                    allow us to do more in HTML. HTML on its own is just a markup language; but 
+                                    with template engines, we can write <strong> for loops</strong>, 
+                                <strong>while loops</strong>, <strong>conditional statements</strong>, 
+                                    and so on within our HTML script. Template engines are powerful and easy to use. 
+                                    There are other template engines as well, like: 
+                                    
+                                </p>
+                                <h2>Other template engines</h2>
+
+                                    <ul>
+                                        <li> <a :href="links('https://www.smarty.net/')" target="_blank">Smarty</a> </li>
+                                        <li> <a :href="links('https://twig.symfony.com/')" target="_blank">Twig</a> </li>
+                                        <li> <a :href="links('https://laravel.com/docs/8.x/blade')" target="_blank">Blade</a> </li>
+                                    </ul>
+
+                                 <h2>Passing values from controller to template:</h2>
+                                 <p>
+                                     Below is the standard way of passing values from the controller class 
+                                     to the template script.
+                                 </p>   
+                                <p v-html ='display( "Drawable/b4.jpg" )' ></p>
+
+                                <p>
+        Okay, there is, obviously, a lot going on in this method. It will be carefully explained
+        one line at a time. Line 113 checks to make sure that the user does not type into the 
+        input a very long name that is clearly unrealistic. To prevent this, a helper is 
+        written to keep the users in check and ensure that proper string lengths are typed into the 
+        input field. Line 114 is where the session is retrieved to tell our app the last time this 
+        particular user was seen. If you have worked with PHP before, the concept of sessions may 
+        not be entirely far from you. The idea is the same, just different definition. Session 
+        variables store temporary information, sometimes to use for retrieving and 
+        viewing data on multiple web pages. On line 116 a class is written, within which a 
+        <strong>processData</strong> method is defined to help process user data. This method returns a 
+        list of <strong>StudentsData</strong> objects. This list is then passed to the 
+        <strong>secretary.scala.html</strong> template to be used there. On line 121, all the parameters
+        relevant to the <strong>secretary.scala.html</strong> page are specified.
+                                </p>
+
+                                <h2>The model folder.</h2>
+                                <p v-html='display( "Drawable/b5.jpg" )' ></p>
+                                <p>
+                                    This folder is very important in PlayFramework. It, along with the other two -- 
+                                    <strong>controllers</strong> and <strong>views</strong> -- complete 
+                                    the Play paradigm. The 
+                                    <strong>createTables.scala</strong> script needs to be properly configured 
+                                    in order to run it successfully. The <strong>Tables</strong> script 
+                                    seen included within this folder is generated automatically each time
+                                    <strong>createTables.scala</strong> script 
+                                    is run successfully. It is not a good idea to change the contents of the 
+                                    <strong>Tables</strong> script. Although if you break this file, you can still come to 
+                                    this <strong>createTables.scala</strong> script and run it again to auto-generate a new 
+                                    one.
+                                </p>
+
+                                <h2>The view folder</h2>
+                                <p>
+                                    This folder holds the view templates as shown below. These templates are controlled in the 
+                                    controller class and served to the user. The template engine used here is Twirl. 
+                                    Twirl, just like every other template engine, lets us do more with our template
+                                     than we would without it.
+                                </p>
+                                <p v-html='display( "Drawable/b6.jpg" )' ></p>
+                                <p>
+                                    The take-away here is line 1 through 6; that is actually how to recieve data from the controller 
+                                    class. These data are then spread across this page and fixed in their respective positions to 
+                                    serve their individual perposes.
+                                </p>
+
+                                <h2>The routes file</h2>
+                                <p>
+                                    This file is another important file in Play Framework. You can not navigate across multiple pages without 
+                                    the routes file. Please see below:
+                                </p>
+
+                                <p v-html='display( "Drawable/b8.jpg" )' ></p>
+
+                                <p>
+                                       The <strong>routes</strong> script is located in the <strong>conf</strong> folder.
+                                       Within this script, you define the different paths relevant to your application.
+                                       You can see from above the different paths defined, which are important to this particular 
+                                       project. This script must be contacted first before the controller. For instance: in your 
+                                       JavaScript page, or even template page, to be able to navigate to another page, you have to 
+                                       specify the path first.
+                                </p>
+
+                                <p v-html='display( "Drawable/b9.jpg" )' ></p>
+                                <p>
+                                   Looking at line 158 of the above picture, you see that <strong>secretary</strong> 
+                                   which is on line 19 of the <strong>routes</strong> script is specified as the path to follow here. 
+                                   So what will happen here is that our program will go first to the <strong>routes</strong> 
+                                   script to look for this particular path. Because it is there, it will proceed with the 
+                                   <b>controller.UsersController.secretary()</b> and invoke that secretary method in the 
+                                    controller class. Within this method, our template is served to the user.
+                                </p>
+                               
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+        
+                    <div id="footer-parent" >
+                        <div id="dark-footer" ></div>
+                        <div id="quote-footer-div" >
+                            <div id="quote-child-div" >
+                                <div>
+                                    All our knowledge begins with the senses, proceeds then to the understanding, 
+                                    and ends with reason. There is nothing higher than reason.’ 
+                                    <span class="author-quote" >
+                                        –Immanuel Kant
+                                    </span>
+                                </div>
+                                <div id="flex-style-div" >
+                                    <div id="flex-1" class="horizontal-div">
+                                        <div></div>
+                                    </div>
+                                    <div id="flex-2" >
+                                        <i class="fa fa-quote-left q" ></i>
+                                    </div>
+                                    <div id="flex-2" ></div>
+                                    <div id="flex-2" ></div>
+                                    <div id="flex-2" >
+                                        <i class="fa fa-quote-right q" ></i>
+                                    </div>
+                                    <div id="flex-3" class="horizontal-div">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lower-child" >
+                        <div id="inner-lower-child" >
+                            <div id="footer-flex-resource-parent-two-div" >
+                                <div id="resourcse-child-div">
+                                    <div>
+                                        <div id="more-resources-div" >More Resources</div>
+                                        <div id="footer-flex-resource-parent-div" ></div>
+                                        <div id="resourcse-child-inner-div" >
+                                            <div class="resource-child" >
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/wiki.png" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>
+                                                        <a :href="links('https://en.wikipedia.org/wiki/JavaScript')" target="_blank">Wikipedia</a>
+                                                    </div>
+                                                </div>
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/codementor.jpg" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>
+                                                        <a :href="links('https://www.codementor.io/')" target="_blank">
+                                                            CodeMentor
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/plural.png" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>
+                                                        <a :href="links('https://www.pluralsight.com/de')" target="_blank">
+                                                            Plural
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/webp.png" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>
+                                                        <a :href="links('https://webflow.com/')" target="_blank">
+                                                            Web Platform
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/khan.png" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>
+                                                        <a :href="links('https://www.khanacademy.org/')" target="_blank">
+                                                            Khan Academy
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="resource-child" >
+                                                <div class="below-resource-div" >
+                                                    <div>
+                                                        <img src="Drawable/ddocs.png" alt="" class="below-img" >
+                                                    </div>
+                                                    <div>  
+                                                        <a :href="links('https://devdocs.io/')" target="_blank">
+                                                            Devdocs
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div id="resource-child-two-div" >
+                                        <div  id="side-first-bg-img-div">
+                                            <div id="center-footer-div" >
+                                                <div id="quote-text-div" >
+                                                    <i class="fa fa-quote-left l" ></i>
+                                                    There are two ways of constructing a software design.  One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.”
+                                                    <div class="author-quote" >
+                                                    -- (C.A.R. Hoare)
+                                                    </div>
+                                                </div>
+                                                <div id="quote-text-div" >
+                                                    <i class="fa fa-quote-left l" ></i>
+                                                    Aim for success, not perfection. Never give up your
+                                                    right to be wrong, because then you will lose the ability
+                                                    to learn new things and move forward with your life.
+                                                    Remember that fear always lurks behind perfectionism.
+                                                        <div class="author-quote" >
+                                                        -- David M. Burns
+                                                        </div> 
+                                                </div>
+                                                <div id="quote-text-div" >
+                                                    <i class="fa fa-quote-left l" ></i>
+                                                    The difference between school and life? In school, 
+                                                    you're taught a lesson and then given a test. In life, 
+                                                    you're given a test that teaches you a lesson.
+                                                    <div class="author-quote" >
+                                                    -- Tom Bodett
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    <div id="side-bg-img-div" >
+                                        <div id="foot-dark-side-div" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+    
+    </div>
+
+
+      <script src = "nodejs/jquery.js" ></script>
+      <script src = "nodejs/vue.js" ></script> 
+      <script src = "nodejs/index.js" ></script>
+
+</body>
+</html>
